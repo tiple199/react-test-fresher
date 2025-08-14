@@ -1,14 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { Outlet } from "react-router-dom";
+import AppHeader from "./components/layout/app.header";
 
 function Layout() {
 
   return (
     <div>
-       Le Nho Tiep
+      <AppHeader />
+      <Outlet />
     </div>
   )
 }
 
-export default Layout
+export default Layout;
