@@ -1,0 +1,31 @@
+.page-order{
+    padding: "10px 15px";
+    
+    .item-order{
+        background: #fff;
+        padding: 15px 15px;
+        border-radius: 7px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__image{
+            width: 80px;
+        }
+        .mainText{
+            width: 350px;
+            margin-left: 10px;
+
+        }
+        .price{
+            margin-right: 15px;
+        }
+        & + .item-order{
+            margin-top: 20px;
+        }
+    }
+    .total-price{
+        background: #fff;
+        padding: 15px;
+        border-radius: 7px;
+    }
+}

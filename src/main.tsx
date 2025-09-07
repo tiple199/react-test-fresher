@@ -21,6 +21,8 @@ import ManageUserPage from 'pages/admin/manage.user';
 import LayoutAdmin from 'components/layout/layout.admin';
 import enUS from 'antd/locale/en_US';
 import viVN from 'antd/locale/vi_VN';
+import Order from './pages/client/order';
+import HistoryPage from './pages/client/history';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -31,7 +33,7 @@ const router = createBrowserRouter([
         element: <HomePage />
       },
       {
-        path: "/book",
+        path: "/book/:id",
         element: <BookPage />,
       },
       {
@@ -45,6 +47,22 @@ const router = createBrowserRouter([
             <div>checkout page</div>
           </ProtectedRoute>
         ),
+      },
+      {
+        path: "/order",
+        element: (
+          <ProtectedRoute>
+            <Order />
+          </ProtectedRoute>
+        )
+      },
+      {
+        path: "/history",
+        element: (
+          <ProtectedRoute>
+            <HistoryPage />
+          </ProtectedRoute>
+        )
       }
     ]
   },

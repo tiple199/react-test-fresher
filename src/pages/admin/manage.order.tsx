@@ -1,8 +1,8 @@
+import OrderTable from "@/components/admin/order/table.order";
+
 const ManageOrderPage = () => {
     return (
-        <div>
-            ManageOrderPage
-        </div>
+        <OrderTable /> 
     )
 }
 

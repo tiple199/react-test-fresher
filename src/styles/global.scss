@@ -2,3 +2,33 @@
 * {
     margin: 0;
 }
+.pop-cart-content{
+    .book{
+        display: flex;
+
+        img{
+            width: 80px;
+        }
+
+        .price{
+            margin-left: 10px;
+            color: red;
+        }
+        & + .book{
+            margin-top: 10px;
+        }
+    }
+    
+}
+.pop-cart-footer{
+    margin-top: 15px;
+    display: flex;
+    justify-content: end;
+    button {
+        padding: 10px 15px;
+        background: #f04a4d;
+        border: none;
+        border-radius: 5px;
+        color: white;
+    }
+}
